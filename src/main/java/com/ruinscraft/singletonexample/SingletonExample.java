@@ -26,6 +26,14 @@ public class SingletonExample {
 		
 		someClass.doSomething(instance);
 		
+		DatabaseExample database = new DatabaseExample(instance);
+		
+		database.connectToDatabase();
+		
+	}
+	
+	public String getDatabaseConnectionInfo() {
+		return "username:password";
 	}
 	
 }
