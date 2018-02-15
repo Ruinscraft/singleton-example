@@ -23,11 +23,9 @@ public class SingletonExample {
 		instance = new SingletonExample();
 		
 		AnotherClass someClass = new AnotherClass();
-		
 		someClass.doSomething(instance);
 		
 		DatabaseExample database = new DatabaseExample(instance);
-		
 		database.connectToDatabase();
 		
 	}
